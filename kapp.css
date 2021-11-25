@@ -1,0 +1,317 @@
+*,*::after,*::before{-moz-box-sizing:inherit;box-sizing:inherit}html{scroll-behavior:smooth}.pageinations{text-align:center}
+
+
+html{-moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+body{
+	font-family: Barlow;
+	 box-sizing: border-box;
+	 background-color: #f1f2f6;
+     justify-content: center;
+     align-items: center;
+}
+
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-section{
+position: absolute;
+left: -0.02%;
+right: 0.02%;
+top: 0px;
+bottom: 96%;
+padding-top: 20px;
+padding-bottom: 20px;
+background: #FFFFFF;
+}
+
+.container-list{
+    align-items: center;
+    justify-content: center;
+    
+
+
+    
+}
+
+.btn1{
+ position: absolute;
+left: 36%;
+right: 49.35%;
+top: 0%;
+bottom: 0%;
+color: #f1f2f6;
+outline: none;
+border: none;
+background: #00AEFF;
+}
+
+
+h1{
+    position: absolute;
+    width: 89px;
+    height: 16px;
+    left: 798.35px;
+    bottom: 2px;
+    
+    font-family: Overpass;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height, or 100% */
+    
+    display: flex;
+    align-items: center;
+    
+    /* Text Colour/1 */
+    
+    color: #333333;
+
+}
+
+
+h2{
+    position: absolute;
+width: 277px;
+height: 37px;
+left: 98px;
+top: 154px;
+
+font-family: Overpass;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 37px;
+/* identical to box height */
+
+display: flex;
+align-items: flex-end;
+
+color: #000000;
+
+}
+
+
+.container-row{
+    position: absolute;
+width: 1300px;
+height: 283px;
+left: 100px;
+top: 221px;
+background: #FFFFFF;
+border: 1px solid #EAEAEA;
+box-sizing: border-box;
+/* Shadow/Tick */
+
+box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+}
+
+
+h3{
+    position: absolute;
+left: 2.42%;
+right: 70.73%;
+top: 12.72%;
+bottom: 73.85%;
+font-family: Overpass;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 37px;
+display: flex;
+align-items: center;
+
+/* Secondary Colour / Dark Blue */
+
+color: #1A2B49;
+}
+
+
+.date{
+    font-size: 16px;
+font-weight:bold;
+display: flex;
+align-items: center;
+}
+
+h4{
+ position: absolute;
+left: 35.73%;
+right: 55.73%;
+top: 10.95%;
+bottom: 80.21%;
+
+font-family: Overpass;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 25px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Secondary Colour / Dark Blue */
+
+color: #1A2B49;
+
+}
+
+
+p{
+    position: absolute;
+left: 35.73%;
+right: 48.47%;
+top: 19.43%;
+bottom: 72.08%;
+
+font-family: Overpass;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+display: flex;
+align-items: center;
+
+color: #777777;
+
+}
+
+.line{
+    position: absolute;
+width: 1300px;
+height: 0px;
+left: 0px;
+top: 99px;
+
+border: 0.5px solid #EAEAEA;
+}
+
+img{
+    position: absolute;
+width: 142px;
+height: 129px;
+left: 30px;
+top: 124px;
+}
+
+.text{
+    position: absolute;
+left: 15.48%;
+right: 38.95%;
+top: 43.82%;
+bottom: 30.72%;
+
+font-family: Overpass;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+
+color: #777777;
+
+}
+
+h5{
+ position: absolute;
+height: 16px;
+left: 1103px;
+top: 124px;
+
+font-family: Overpass;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 16px;
+display: flex;
+align-items: flex-end;
+
+/* Text Colour / 2 */
+
+color: #4F4F4F;
+
+}
+
+h6{
+    position: absolute;
+width: 177px;
+height: 16px;
+left: 1100px;
+top: 173px;
+
+font-family: Overpass;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 16px;
+/* identical to box height, or 67% */
+
+display: flex;
+align-items: flex-end;
+
+/* Text Colour/1 */
+
+color: #333333;
+
+}
+
+.profile{
+    position: absolute;
+width: 36px;
+height: 36px;
+left: 192px;
+top: 217px;
+}
+
+span{
+    position: absolute;
+width: 106px;
+height: 17px;
+left: 238px;
+top: 225px;
+
+font-family: Overpass;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 17px;
+/* identical to box height, or 105% */
+
+display: flex;
+align-items: flex-end;
+
+color: #777777;
+
+}
+
+.container-row2{
+ position: absolute;
+width: 1300px;
+height: 283px;
+left: 0px;
+top: 300px;
+
+background: #FFFFFF;
+border: 1px solid #EAEAEA;
+box-sizing: border-box;
+/* Shadow/Tick */
+
+box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+}
