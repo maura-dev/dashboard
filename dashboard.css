@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400&display=swap');
+*,*::after,*::before{-moz-box-sizing:inherit;box-sizing:inherit}html{scroll-behavior:smooth}.pageinations{text-align:center}
+
+
+html{
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+body{
+	font-family: Barlow;
+	 box-sizing: border-box;
+	 background-color: #f1f2f6;
+     justify-content: center;
+     align-items: center;
+     margin:0;
+     font-family: 'Overpass', sans-serif;
+}
+
+.button-section{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    background: #FFFFFF;
+}
+
+.container-list{
+    align-items: center;
+    justify-content: center;
+    padding: 20px 100px;
+}
+
+button{
+    font-size: 16px;
+    height:50px;
+    cursor:pointer;
+    outline: none;
+    border:none;
+    width:17%;
+    font-family: 'Overpass', sans-serif;
+}
+
+.btn1{
+    color: #f1f2f6;
+    background: #00AEFF;
+}
+
+.btn2{
+    color: #333333;
+    background:transparent;
+}
+
+.container-row{
+    height: 283px;
+    margin:10px auto;
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    position:relative;
+}
+  
+.container-top{
+    padding:0px 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    border-bottom:1px solid #EAEAEA;
+}
+
+.title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 37px;
+    color: #1A2B49;
+    padding-right:30px;
+    border-right: 1px solid #EAEAEA;
+}
+
+.p-date{
+    margin-left: 30px;
+}
+
+.p-date h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #1A2B49;
+    margin-bottom:10px;
+}
+
+.p-date p{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+color:#4f4f4f;
+margin-top:-10px;
+}
+
+.grid{
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+
+}
+
+.about{
+    width: 50%;
+    margin-left:-100px;
+}
+
+.about span{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 17px;
+color:#4f4f4f;
+margin-top: 10px;
+}
+
+.text{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 25px;
+color:#4f4f4f;
+}
+
+.grid-1{
+    font-size: 24px;
+    line-height: 16px;
+}
+
+.grid-1 h5{
+    font-style: normal;
+    font-weight: normal;  
+    color:#4f4f4f;
+}
+
+.grid-1 h6{
+    font-style: normal;
+    font-weight: bold;
+    color:#333333;
+    margin-top:-10px;
+}
+
+.profile{
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid{
+        padding:10px 20px;
+    
+    }
+
+    .about{
+        width: 50%;
+        margin-left:-50px;
+    }
+
+    button{
+        width:25%;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .container-list{
+        padding: 20px 50px;
+    }
+
+    .about{
+        width: 55%;
+        margin-left:0px;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .container-list{
+        padding: 20px;
+    }
+
+    button{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 680px) {
+    .about{
+        width: 65%;
+    }
+    .container-row{
+        height: 430px;   
+    }
+
+    .container-top{
+        flex-direction: column;
+        border-bottom:none;
+    }
+    
+    .title{
+        border-right:none;
+    }
+
+    .p-date{
+        margin-left: 0px;
+        margin-top: -30px;
+    }
+    
+    .grid{
+       flex-wrap: wrap;
+    }
+
+    .profile, .grid-1{
+        position: absolute;
+        bottom:80px;
+        left: 20px;
+    }
+
+    .grid-1{
+        bottom:-15px;
+    }
+
+    .grid-1 h6 {
+        margin-top: -15px;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    button{
+        width:50%;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .grid{
+        max-height: 130px;
+        flex-wrap: nowrap;
+    }
+
+    .profile, .grid-1{
+        bottom:80px;
+    }
+
+    .grid-1{
+        bottom:-20px;
+    }
+
+    .text {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        margin-left: 20px;
+    }
+    
+}
