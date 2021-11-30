@@ -26,7 +26,8 @@ body{
     background: #FFFFFF;
 }
 
-.container-list{
+.container-list,
+.businesses-container{
     align-items: center;
     justify-content: center;
     padding: 20px 100px;
@@ -40,6 +41,7 @@ button{
     border:none;
     width:17%;
     font-family: 'Overpass', sans-serif;
+    transition: 0.4s ease-in-out;
 }
 
 .btn1{
@@ -54,7 +56,7 @@ button{
 
 .container-row{
     height: 283px;
-    margin:10px auto;
+    margin:20px auto;
     background: #FFFFFF;
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
@@ -156,10 +158,114 @@ color:#4f4f4f;
     justify-content: space-between;
 }
 
+.businesses-container{
+    display: none;
+}
+
+.bus-nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bus-link{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: underline;
+    color: #0aaeff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.bus-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.btn3{
+    border: 1px solid #333333;
+}
+
+.b-btn{
+    height: 38px;
+    width:auto;
+    padding: 0px 20px;
+}
+
+.bus-price{
+    font-weight: bold;
+font-size: 24px;
+line-height: 16px;
+color:#333333;
+}
+
+.prod-title{
+    color:#1A2B49;
+    font-weight: bold;
+    line-height: 4px;
+    margin-top: 10px;
+}
+
+.prod-text{
+    color:#777777;
+    margin-bottom: -5px;
+}
+
+.prod-id{
+    padding-right: 30px;
+    border-right: 1px solid #EAEAEA;
+}
+
+.prod-date{
+    padding-left:30px;
+}
+
+.about-prod{
+    line-height: 10px;
+    margin-left: -50px;
+}
+
+.about-prod-title{
+    margin:0px;
+    border-right: none;
+}
+
+.prod-status{
+    position: absolute;
+    right:30px;
+}
+
+.bus-row-top{
+    display:flex;
+    flex-direction: row;
+    padding: 20px 30px 20px 30px;
+    position: relative;
+    border-bottom:1px solid #EAEAEA;
+}
+
+.bus-tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #DADADA;
+    margin-top: 20px;
+}
+
+.active-tab{
+    border-bottom: 3px solid #1A2B49;
+}
+
+.bus-tabs .btn2{
+    font-size: 16px;
+}
 @media screen and (max-width: 1000px) {
     .grid{
         padding:10px 20px;
-    
     }
 
     .about{
@@ -169,6 +275,13 @@ color:#4f4f4f;
 
     button{
         width:25%;
+    }
+
+    .businesses-container .container-row{
+        height:350px;
+    }
+    .about-prod{
+        margin-left: 0px;
     }
     
 }
@@ -182,6 +295,38 @@ color:#4f4f4f;
         width: 55%;
         margin-left:0px;
     }
+
+    .about-prod-title{
+        font-size: 18px;
+    }
+
+    .bus-btns{
+        width: 60%;
+    }
+
+    .bus-price{
+        font-size: 18px;
+    }
+
+    .about-prod{
+        width:50%;
+    }
+
+    .text{
+        font-size: 14px;
+    }
+
+    .grid-1 {
+        font-size: 20px;
+    }
+
+    .businesses-container{
+        padding:20px 50px;
+    }
+
+    .businesses-container .container-row{
+        height:300px;
+    }
     
 }
 
@@ -194,10 +339,21 @@ color:#4f4f4f;
         font-size: 14px;
         line-height: 16px;
     }
+
+    .businesses-container .container-row{
+        height:330px;
+    }
     
 }
 
 @media screen and (max-width: 680px) {
+    h2{
+        font-size: 18px;
+    }
+    .bus-btns{
+        width:100%;
+        margin-top: 20px;
+    }
     .about{
         width: 65%;
     }
@@ -237,9 +393,67 @@ color:#4f4f4f;
         margin-top: -15px;
     }
 
+    .bus-price {
+        position: absolute;
+        bottom: -20px;
+    }
+
+    .about-prod-title{
+        position: absolute;
+        text-align: center;
+        top: 100px;
+        left:25%;
+    }
+
+    .prod-grid{
+        margin-top: 50px;
+    }
+
+    .businesses-container .container-row{
+        height: 360px;
+    }
+
+    .prod-id{
+        border-right: none;
+        padding-right: 0px;
+    }
+
+    .prod-text{
+        margin-left: 0px;
+    }
+
+    .prod-date {
+        padding-left: 0px;
+    }
+
+    .bus-row-top{
+        justify-content: space-between;
+        padding:20px 30px 20px 30px;
+    }
+
+    .prod-status{
+        position: relative;
+        right: 0;
+    }
+
+    .bus-nav{
+        position: relative;
+    }
+
+    .bus-link{
+        position: absolute;
+        top:0;
+        right:30px;
+    }
+
+    .b-btn{
+        width:45%;
+    }
+
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 550px) {
+    
     button{
         width:50%;
         font-size: 12px;
@@ -264,6 +478,106 @@ color:#4f4f4f;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         margin-left: 20px;
+        line-height: 22px;
+    }
+
+    .businesses-container {
+        padding: 20px 30px;
+    }
+
+    .bus-price {
+        position: absolute;
+        bottom: -20px;
+    }
+
+    .businesses-container .container-row{
+        height: 330px;
+    }
+
+    .prod-title,
+    .prod-text{
+        margin-left: 0px;
+    }
+
+    .about-prod-title {
+        top: 120px;
     }
     
 }
+
+@media screen and (max-width: 450px) {
+    h2{
+        font-size: 16px;
+    }
+    .about-prod-title {
+        font-size: 16px;
+    }
+
+    .bus-tabs .btn2{
+        font-size: 14px;
+    }
+
+    .bus-row-top {
+        padding: 20px 10px 20px 10px;
+    }
+
+    .about-prod-title {
+        top: 105px;
+        left:15%;
+    }
+
+    .bus-price {
+        bottom: 0px;
+    }
+
+    .businesses-container {
+        padding: 20px;
+    }
+
+    .prod-grid {
+        margin-top: 30px;
+    }
+
+    .bus-link{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bus-link{
+        top:-5px;
+    }
+    .text{
+        font-size: 12px;
+    }
+
+    .about-prod-title {
+        font-size: 14px;
+    }
+
+    .bus-price {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h2{
+        font-size: 14px;
+    }
+    .businesses-container {
+        padding: 20px 10px;
+    }
+
+    .bus-link{
+        right:5px;
+        top:-5px;
+    }
+    .text{
+        font-size: 10px;
+    }
+    .about-prod-title {
+        font-size: 12px;
+    }
+}
+
+
