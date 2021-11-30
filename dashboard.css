@@ -251,7 +251,7 @@ color:#333333;
 .bus-tabs{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: left;
     border-bottom: 1px solid #DADADA;
     margin-top: 20px;
 }
@@ -347,6 +347,9 @@ color:#333333;
 }
 
 @media screen and (max-width: 680px) {
+    .bus-tabs{
+        justify-content: space-around;
+    }
     h2{
         font-size: 18px;
     }
