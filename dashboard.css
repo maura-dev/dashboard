@@ -158,9 +158,9 @@ color:#4f4f4f;
     justify-content: space-between;
 }
 
-.businesses-container{
+/* .businesses-container{
     display: none;
-}
+} */
 
 .bus-nav{
     display: flex;
@@ -263,6 +263,70 @@ color:#333333;
 .bus-tabs .btn2{
     font-size: 16px;
 }
+
+.all-bus-about{
+    padding: 0px 30px;
+}
+
+.all-bus-about .text{
+    width: 70%;
+}
+
+.all-bus-about hr{
+    border: 1px solid #EAEAEA;
+}
+
+.bus-row-bottom{
+    display: flex;
+    position: relative;
+    /* justify-content: space-around; */
+}
+
+.bus-details{
+    border-right: 1px solid #EAEAEA;
+    padding: 0px 20px;
+}
+
+.btn-4{
+    border: 2px solid #00AEFF;
+    border-radius: 3px;
+    color: #00AEFF;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    height: 40px;
+}
+
+.bus-row-bottom button{
+    align-self: center;
+    margin-left: 12%;
+}
+
+.item-title{
+    font-weight: bold;
+    font-size: 16px;
+    color: #1a2331;
+}
+
+.item-text{
+    font-weight: normal;
+    font-size: 16px;
+    color:#777777;
+}
+
+.all-bus-img{
+    width: 300px;
+}
+
+.all-bus{
+    height: auto;
+}
+
+@media screen and (max-width: 1150px) {
+    .container-list, .businesses-container {
+        padding: 20px 60px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .grid{
         padding:10px 20px;
@@ -287,6 +351,20 @@ color:#333333;
 }
 
 @media screen and (max-width: 900px) {
+    .all-bus-img{
+        width: 400px;
+        height:280px;
+    }
+
+    .bus-row-bottom button {
+        margin-left: 10px;
+    }
+
+    .item-title,
+    .item-text{
+        font-size: 14px;
+    }
+    
     .container-list{
         padding: 20px 50px;
     }
@@ -331,6 +409,19 @@ color:#333333;
 }
 
 @media screen and (max-width: 800px) {
+    .all-bus-about button{
+        position: absolute;
+        top: 120px;
+        width: 100%;
+    }
+
+    .all-bus-about .text {
+        width: 100%;
+    }
+
+    .all-bus{
+        min-height:400px;
+    }
     .container-list{
         padding: 20px;
     }
@@ -341,12 +432,51 @@ color:#333333;
     }
 
     .businesses-container .container-row{
+        padding: 20px 30px;
         height:330px;
     }
     
 }
 
 @media screen and (max-width: 680px) {
+    .all-bus{
+        padding: 0px !important;
+        min-height: 680px;
+        width: 80%;
+    }
+
+    .all-bus .prod-grid{
+        margin-top: 0px;
+    }
+
+    .all-bus .grid{
+        padding: 0px;
+    }
+
+    .all-bus-img{
+        width: 100%;
+    }
+
+    .all-bus-about .about-prod-title{
+        position: relative;
+        text-align: left;
+        top:0px;
+        left:0px;
+    }
+
+    .bus-row-bottom{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .all-bus-about button {
+        top: 150px;
+    }
+
+    .bus-details{
+        border-right:none;
+    }
+
     .bus-tabs{
         justify-content: space-around;
     }
@@ -456,6 +586,17 @@ color:#333333;
 }
 
 @media screen and (max-width: 550px) {
+    .all-bus{
+        width: 90%;
+    }
+
+    .all-bus .grid{
+        flex-wrap: wrap;
+    }
+
+    .all-bus-about .text{
+        margin-left: 0px;
+    }
     
     button{
         width:50%;
@@ -509,6 +650,10 @@ color:#333333;
 }
 
 @media screen and (max-width: 450px) {
+    .all-bus{
+        width: 100%;
+    }
+
     h2{
         font-size: 16px;
     }
@@ -550,7 +695,9 @@ color:#333333;
     .bus-link{
         top:-5px;
     }
-    .text{
+    .text,
+    .item-title,
+    .item-text{
         font-size: 12px;
     }
 
@@ -562,6 +709,13 @@ color:#333333;
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .bus-details{
+        padding: 0px;
+    }
+}
+    
 
 @media screen and (max-width: 320px) {
     h2{
