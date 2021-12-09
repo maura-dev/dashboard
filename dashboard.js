@@ -13,3 +13,15 @@ function showPurchaseTab(){
 function showStore(){
     window.location.href ="/business/store.html"
 }
+
+function showReservations(){
+    window.location.href ="/business/reservations.html"
+}
+
+function showProducts(){
+    window.location.href ="/business/store.html"
+}
+
+function showOrders(){
+    window.location.href ="/business/orders.html"
+}

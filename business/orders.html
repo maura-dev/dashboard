@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reservations.css">
+    <link rel="stylesheet" href="../dashboard.css">
+    <title>Timbu | Business</title>
+</head>
+<body>
+    <div class="display">
+        <div class="button-section">
+            <button class="btn2" id="purchase-btn" onclick="showPurchaseTab()"> Purchase and reservation</button>
+            <button class="btn1" id="business-btn" onclick="showMyBusinessTab()"> My business</button>
+        </div>
+
+        <!-- MY BUSINESSES -->
+        <div class="businesses-container">
+            <div class="bus-nav">
+                <h2> Okon & sons mobile gadgets</h2>
+            </div>
+
+            <div class="bus-tabs">
+                <button class="btn2 active-tab" onclick="showOrders()">Orders</button>
+                <button class="btn2" onclick="showProducts()">Products</button>
+                <button class="btn2" onclick="showInfo()">Info</button>
+            </div>
+
+            <div class="filter-section">
+                <p class="filter-text">Filter by:</p>
+                <select>
+                    <option selected disabled>Date</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+                <select>
+                    <option selected disabled>Today</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+                <select>
+                    <option selected disabled>Newest</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                </select>
+            </div>
+
+            <p class="res-day">Today</p>
+
+            <div class="container-row all-bus">
+                <div class="order">
+                    <img class="all-bus-img" src="https://res.cloudinary.com/ddunuksxx/image/upload/v1637779308/unsplash_sweUF7FcyP4_xq2zxp.png"
+                        alt="">
+                    <div class="res-about">
+                        <div class="res-time">
+                            <p class="res-bold-text">Order date</p>
+                            <p class="res-normal-text">28 March, 2021</p>
+                        </div>   
+                        <hr class="full-divider"/>
+                        <div>
+                            <h3 class="res-title">EApple iPhone X 64 GB White</h3>
+                            <h3 class="res-title">Price: ₦100,000</h3>
+                        </div>
+                        
+                        <div class="order-details-section">
+                            <div class="order-details">
+                                <p class="res-bold-text">Order I:D</p>
+                                <p class="res-normal-text">00000000001846</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customers phone number</p>
+                                <p class="res-normal-text">07056345620</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customer details</p>
+                                <p class="res-normal-text">Chris rock</p>
+                            </div>     
+                        </div>
+                        <h3 class="order-qty">Order quantity: 2</h3>
+                        <div class="order-status">
+                            <p>Product status</p>
+                            <select>
+                                <option selected disabled>In progress</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-row all-bus">
+                <div class="order">
+                    <img class="all-bus-img" src="https://res.cloudinary.com/ddunuksxx/image/upload/v1637779308/unsplash_sweUF7FcyP4_xq2zxp.png"
+                        alt="">
+                    <div class="res-about">
+                        <div class="res-time">
+                            <p class="res-bold-text">Order date</p>
+                            <p class="res-normal-text">28 March, 2021</p>
+                        </div>   
+                        <hr class="full-divider"/>
+                        <div>
+                            <h3 class="res-title">EApple iPhone X 64 GB White</h3>
+                            <h3 class="res-title">Price: ₦100,000</h3>
+                        </div>
+                        
+                        <div class="order-details-section">
+                            <div class="order-details">
+                                <p class="res-bold-text">Order I:D</p>
+                                <p class="res-normal-text">00000000001846</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customers phone number</p>
+                                <p class="res-normal-text">07056345620</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customer details</p>
+                                <p class="res-normal-text">Chris rock</p>
+                            </div>     
+                        </div>
+                        <h3 class="order-qty">Order quantity: 2</h3>
+                        <div class="order-status">
+                            <p>Product status</p>
+                            <select>
+                                <option selected disabled>In progress</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-row all-bus">
+                <div class="order">
+                    <img class="all-bus-img" src="https://res.cloudinary.com/ddunuksxx/image/upload/v1637779308/unsplash_sweUF7FcyP4_xq2zxp.png"
+                        alt="">
+                    <div class="res-about">
+                        <div class="res-time">
+                            <p class="res-bold-text">Order date</p>
+                            <p class="res-normal-text">28 March, 2021</p>
+                        </div>   
+                        <hr class="full-divider"/>
+                        <div>
+                            <h3 class="res-title">EApple iPhone X 64 GB White</h3>
+                            <h3 class="res-title">Price: ₦100,000</h3>
+                        </div>
+                        
+                        <div class="order-details-section">
+                            <div class="order-details">
+                                <p class="res-bold-text">Order I:D</p>
+                                <p class="res-normal-text">00000000001846</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customers phone number</p>
+                                <p class="res-normal-text">07056345620</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customer details</p>
+                                <p class="res-normal-text">Chris rock</p>
+                            </div>     
+                        </div>
+                        <h3 class="order-qty">Order quantity: 2</h3>
+                        <div class="order-status">
+                            <p>Product status</p>
+                            <select>
+                                <option selected disabled>In progress</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="res-day">Yesterday</p>
+
+            <div class="container-row all-bus">
+                <div class="order">
+                    <img class="all-bus-img" src="https://res.cloudinary.com/ddunuksxx/image/upload/v1637779308/unsplash_sweUF7FcyP4_xq2zxp.png"
+                        alt="">
+                    <div class="res-about">
+                        <div class="res-time">
+                            <p class="res-bold-text">Order date</p>
+                            <p class="res-normal-text">28 March, 2021</p>
+                        </div>   
+                        <hr class="full-divider"/>
+                        <div>
+                            <h3 class="res-title">EApple iPhone X 64 GB White</h3>
+                            <h3 class="res-title">Price: ₦100,000</h3>
+                        </div>
+                        
+                        <div class="order-details-section">
+                            <div class="order-details">
+                                <p class="res-bold-text">Order I:D</p>
+                                <p class="res-normal-text">00000000001846</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customers phone number</p>
+                                <p class="res-normal-text">07056345620</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customer details</p>
+                                <p class="res-normal-text">Chris rock</p>
+                            </div>     
+                        </div>
+                        <h3 class="order-qty">Order quantity: 2</h3>
+                        <div class="order-status">
+                            <p>Product status</p>
+                            <select>
+                                <option selected disabled>In progress</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-row all-bus">
+                <div class="order">
+                    <img class="all-bus-img" src="https://res.cloudinary.com/ddunuksxx/image/upload/v1637779308/unsplash_sweUF7FcyP4_xq2zxp.png"
+                        alt="">
+                    <div class="res-about">
+                        <div class="res-time">
+                            <p class="res-bold-text">Order date</p>
+                            <p class="res-normal-text">28 March, 2021</p>
+                        </div>   
+                        <hr class="full-divider"/>
+                        <div>
+                            <h3 class="res-title">EApple iPhone X 64 GB White</h3>
+                            <h3 class="res-title">Price: ₦100,000</h3>
+                        </div>
+                        
+                        <div class="order-details-section">
+                            <div class="order-details">
+                                <p class="res-bold-text">Order I:D</p>
+                                <p class="res-normal-text">00000000001846</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customers phone number</p>
+                                <p class="res-normal-text">07056345620</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customer details</p>
+                                <p class="res-normal-text">Chris rock</p>
+                            </div>     
+                        </div>
+                        <h3 class="order-qty">Order quantity: 2</h3>
+                        <div class="order-status">
+                            <p>Product status</p>
+                            <select>
+                                <option selected disabled>In progress</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-row all-bus">
+                <div class="order">
+                    <img class="all-bus-img" src="https://res.cloudinary.com/ddunuksxx/image/upload/v1637779308/unsplash_sweUF7FcyP4_xq2zxp.png"
+                        alt="">
+                    <div class="res-about">
+                        <div class="res-time">
+                            <p class="res-bold-text">Order date</p>
+                            <p class="res-normal-text">28 March, 2021</p>
+                        </div>   
+                        <hr class="full-divider"/>
+                        <div>
+                            <h3 class="res-title">EApple iPhone X 64 GB White</h3>
+                            <h3 class="res-title">Price: ₦100,000</h3>
+                        </div>
+                        
+                        <div class="order-details-section">
+                            <div class="order-details">
+                                <p class="res-bold-text">Order I:D</p>
+                                <p class="res-normal-text">00000000001846</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customers phone number</p>
+                                <p class="res-normal-text">07056345620</p>
+                            </div>
+                            <div class="order-details">
+                                <p class="res-bold-text">Customer details</p>
+                                <p class="res-normal-text">Chris rock</p>
+                            </div>     
+                        </div>
+                        <h3 class="order-qty">Order quantity: 2</h3>
+                        <div class="order-status">
+                            <p>Product status</p>
+                            <select>
+                                <option selected disabled>In progress</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    <script src="../dashboard.js"></script>
+</body>
+</html>
