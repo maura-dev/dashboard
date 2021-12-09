@@ -256,6 +256,10 @@ select{
 }
 
 @media screen and (max-width: 690px) {
+    .order-details:not(:first-of-type) {
+        padding-left: 0px;
+    }
+
     .all-order,
     .all-res{
         width: 80%;
@@ -382,5 +386,10 @@ select{
 
 .filter-section select{
     padding:0px;
+}
+
+.btn-5,
+.btn6{
+    font-size: 12px;
 }
 }
