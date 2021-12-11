@@ -25,3 +25,7 @@ function showProducts(){
 function showOrders(){
     window.location.href ="/business/orders.html"
 }
+
+function showAddProducts(){
+    window.location.href ="/business/add-products.html"
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dashboard.css">
+    <link rel="stylesheet" href="./forms.css">
+    <title>Timbu | Business</title>
+</head>
+<body>
+    <div class="display">
+        <div class="button-section">
+            <button class="btn2" id="purchase-btn" onclick="showPurchaseTab()"> Purchase and reservation</button>
+            <button class="btn1" id="business-btn" onclick="showMyBusinessTab()"> My business</button>
+        </div>
+
+        <!-- MY BUSINESSES -->
+        <div class="businesses-container">
+            <div class="bus-nav">
+                <h2> Add products you sell</h2>   
+            </div>
+
+            <div class="add-new-form">
+                <form>
+                    <div class="input-row">
+                        <div class="input-section">
+                            <label for="p-name">Product name</label>
+                            <input type="text" id="p-name" name="p-name"/>
+                        </div>
+    
+                        <div class="input-section"> 
+                            <label for="p-price">Price</label>
+                            <input type="text" id="p-price" name="p-price"/>
+                        </div>
+                    </div>
+                   
+                    <div class="input-row">
+                        <div class="input-section">
+                            <label for="p-id">Product I:D</label>
+                            <input type="text" id="p-id" name="p-id"/>
+                        </div>
+    
+                        <div class="input-section">
+                            <label for="p-category">Product category</label>
+                            <input type="text" id="p-category" name="p-category"/>
+                        </div>
+                    </div>
+
+                    <div class="input-section textarea">
+                        <label for="p-description" class="p-des">Product description</label>
+                        <textarea type="text" id="p-description" name="p-description" rows="8"></textarea>
+                    </div>
+                    
+                    <div class="input-image-section">
+                        <p class="image-title">Add product image</p>
+                        <p class="image-sub">First photo is the cover image</p>
+                        <div class="images">
+                            <img class="input-img" src="https://res.cloudinary.com/ddunuksxx/image/upload/v1637779308/unsplash_sweUF7FcyP4_xq2zxp.png"
+                            alt="">
+                            <img class="input-img" src="https://res.cloudinary.com/ddunuksxx/image/upload/v1637779308/unsplash_sweUF7FcyP4_xq2zxp.png"
+                            alt="">
+                            <div class="input-img new-img-section">
+                                <input type="file" id="new-img">
+                                <p>Upload image</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <p class="image-title">Product status</p>
+                        <select>
+                            <option selected disabled>Active</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                        </select>
+
+                        <button class="add-btn">Add product</button>
+                    </div>
+                    
+                </form>
+
+            </div>
+
+            
+            
+        </div>
+    <script src="../dashboard.js"></script>
+</body>
+</html>
