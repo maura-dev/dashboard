@@ -48,6 +48,7 @@ border-radius: 4px;
 width:125px;
 height:42px;
 margin-right: 10px;
+outline-style: none;
 }
 
 input[type="checkbox"]::before{
@@ -103,6 +104,7 @@ margin-top: 13px;
     background: #FFFFFF;
 border: 1px solid #D6D7DA;
 border-radius: 4px;
+outline-style: none;
 }
 
 .input-image-section{
@@ -133,6 +135,7 @@ border-radius: 4px;
     visibility: hidden;
     height:50%;
     width:100%;
+    outline-style: none;
 }
 
 .new-img-section p{
